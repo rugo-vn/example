@@ -1,0 +1,29 @@
+{
+  "name": "vue-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development rugo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rugo-vn/open": "^1.1.0-beta.6",
+    "@rugo-vn/vue": "^1.1.0-beta.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vueuse/core": "^10.1.2",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  }
+}
