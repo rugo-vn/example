@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rugo-vn/open": "^1.1.0-beta.6",
-    "@rugo-vn/vue": "^1.1.0-beta.4",
+    "@rugo-vn/open": "^1.1.0-beta.8",
+    "@rugo-vn/vue": "^1.1.0-beta.6",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vueuse/core": "^10.1.2",
     "autoprefixer": "^10.4.14",

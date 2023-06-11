@@ -13,33 +13,37 @@ const logout = () => {
 </script>
 
 <template>
-  <div class="p-4">
-    <RPanel>
-      <RHeading>Vue Boilerplate</RHeading>
+  <div>
+    <div class="p-4">
+      <RPanel class="mt-0">
+        <RHeading>Vue Boilerplate</RHeading>
 
-      <div class="py-2 my-6 border-t border-b">
-        <RouterLink
-          class="mr-4 underline"
-          :to="ROUTE_HOME"
-          >Home</RouterLink
-        >
+        <div class="py-2 my-6 border-t border-b">
+          <RouterLink
+            class="mr-4 underline"
+            :to="ROUTE_HOME"
+            >Home</RouterLink
+          >
 
-        <RouterLink
-          v-if="!rugoStore.token"
-          class="mr-4 underline"
-          :to="ROUTE_SIGN_IN"
-          >Sign In</RouterLink
-        >
+          <RouterLink
+            v-if="!rugoStore.token"
+            class="mr-4 underline"
+            :to="ROUTE_SIGN_IN"
+            >Sign In</RouterLink
+          >
 
-        <a
-          v-if="rugoStore.token"
-          class="mr-4 underline cursor-pointer"
-          @click="logout"
-          >Sign Out</a
-        >
-      </div>
+          <a
+            v-if="rugoStore.token"
+            class="mr-4 underline cursor-pointer"
+            @click="logout"
+            >Sign Out</a
+          >
+        </div>
 
-      <RouterView />
-    </RPanel>
+        <RouterView />
+      </RPanel>
+    </div>
+
+    <RNotification :notices="rugoStore.notices" />
   </div>
 </template>

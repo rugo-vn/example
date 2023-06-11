@@ -4,6 +4,13 @@ export default {
     assets: [
       { name: 'statics', type: 'static', mount: '/' },
       { name: 'views', type: 'view', mount: '/' },
+      {
+        name: 'todos',
+        type: 'db',
+        properties: {
+          todo: { type: 'String' },
+        },
+      },
     ],
   },
 };
